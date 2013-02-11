@@ -1,0 +1,33 @@
+/* component icon-links */
+
+.contact-icons //ul
+  padding: 0 0 0 10px
+  font-size: 0
+  
+  li
+    display: inline-block
+    *display: inline /*IE hack */
+    zoom: 1 /*IE hack */
+    width: 30px
+    height: 30px
+    padding: 0
+    margin: 0 3px
+    vertical-align: middle
+    +border-radius(50%)
+    
+    &.linkedin
+      background: sprite($icons, linkedin-pink-30) no-repeat
+
+    &.facebook
+      background: sprite($icons, facebook-pink-30) no-repeat
+
+    &.twitter
+      background: sprite($icons, twitter-pink-30) no-repeat
+
+    &.mail
+      background: sprite($icons, email-pink-30) no-repeat
+
+  a
+    display: block
+    height: 100%
+    +hide-text

@@ -1,0 +1,346 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* utilities variables */
+/* sprites */
+/* media breakpoints */
+/* utilities placeholders */
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* base layout */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url("../images/bg-body.png");
+}
+
+.container {
+  width: 960px;
+  min-height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 60px;
+  background: white url("../images/bg-container.png") no-repeat bottom left;
+  -moz-box-shadow: 0 0 10px 10px #333333;
+  -webkit-box-shadow: 0 0 10px 10px #333333;
+  box-shadow: 0 0 10px 10px #333333;
+  background-size: 100%;
+}
+@media (max-width: 960px) {
+  .container .container {
+    width: 100%;
+  }
+}
+
+.main {
+  margin-bottom: 200px;
+}
+
+.content {
+  width: 63.4%;
+  float: right;
+  padding-left: 60px;
+  border-left: 2px solid #ed145b;
+}
+
+aside {
+  width: 36.6%;
+  float: left;
+  padding-right: 60px;
+}
+
+/* base typograpy */
+@font-face {
+  font-family: IdolWild;
+  src: url("../fonts/idolwild-webfont.eot");
+  src: url("../fonts/idolwild-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/idolwild-webfont.woff") format("woff"), url("../fonts/idolwild-webfont.ttf") format("truetype"), url("../fonts/idolwild-webfont.svg#idolwild") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color: #454545;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: IdolWild, sans-serif;
+  color: #ed145b;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0 8px 0;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+p a {
+  color: #ed145b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* component icon-links */
+.contact-icons {
+  padding: 0 0 0 10px;
+  font-size: 0;
+}
+.contact-icons li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0 3px;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.contact-icons li.linkedin {
+  background: url('../images/icons-sf39b881db7.png') 0 -243px no-repeat;
+}
+.contact-icons li.facebook {
+  background: url('../images/icons-sf39b881db7.png') 0 -333px no-repeat;
+}
+.contact-icons li.twitter {
+  background: url('../images/icons-sf39b881db7.png') 0 -198px no-repeat;
+}
+.contact-icons li.mail {
+  background: url('../images/icons-sf39b881db7.png') 0 -102px no-repeat;
+}
+.contact-icons a {
+  display: block;
+  height: 100%;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* module header */
+header {
+  position: relative;
+  margin-bottom: 40px;
+}
+header hgroup {
+  width: 540px;
+  padding-top: 60px;
+}
+header h1 {
+  font-size: 56px;
+  text-shadow: 4px 4px 8px #333333;
+}
+header h2 {
+  margin-left: 180px;
+  color: #454545;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+}
+
+/* module nav */
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 24px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  font-size: 0;
+}
+nav li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 0 6px;
+  vertical-align: middle;
+}
+nav a {
+  display: block;
+  font-size: 16px;
+}
+nav ul ul {
+  height: 30px;
+  border-left: 2px solid #454545;
+}
+
+/* module photocycle */
+.portretFader {
+  height: 177px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.portret {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* module skills */
+.skills {
+  float: right;
+  text-align: right;
+}
+.skills p {
+  font-style: italic;
+}
+
+/* module stats */
+.stats {
+  float: right;
+  text-align: right;
+}
+.stats span {
+  color: #ed145b;
+  font-style: italic;
+}
+
+/* module article */
+article {
+  margin-bottom: 20px;
+}
+article .author {
+  margin: 0 40px 30px 40px;
+}
+article blockquote {
+  margin: 0 40px 10px 40px;
+  font-style: italic;
+}
+
+/* module footer */
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #cccccc;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+footer p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 24px 60px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+footer div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 60px 24px 0;
+}
+footer li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  height: 30px;
+  vertical-align: middle;
+  color: #666666;
+}
+footer a {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+}
+footer .backtotop {
+  padding-left: 18px;
+  background: url('../images/icons-sf39b881db7.png') 0 -288px no-repeat;
+}

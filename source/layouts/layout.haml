@@ -5,7 +5,6 @@
 
     %link{:href => 'favicon.ico', :rel => 'shortcut icon'}
     %link{:href => 'http://fonts.googleapis.com/css?family=Frijole', :rel => 'stylesheet'}
-    %link{:href => 'http://fonts.googleapis.com/css?family=Share', :rel => 'stylesheet'}
 
     %meta{:charset => 'utf-8'}
     %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1'}
@@ -16,39 +15,39 @@
     = javascript_include_tag 'all'
 
   %body
-    #idcontainer.container
-      %header
-        %hgroup
-          %h1 Hetty de Vries
-          %h2 funny friendly front-ender
+    .wrap
+      %header.mod-header
+        %h1 Hetty de Vries
+        %h2 funny friendly front-ender
 
-        %nav
-          %ul
-            %li= link_to 'Home', '/'
-            %li= link_to 'About', '/about.html'
-            %li= link_to 'Work', '/work.html'
-            %li
-              %ul.contact-icons
-                %li.linkedin= link_to 'linkedin', 'http://nl.linkedin.com/in/hettydevries'
-                %li.facebook= link_to 'facebook', 'https://www.facebook.com/hetty82'
-                %li.twitter= link_to 'twitter', 'https://twitter.com/hettydevries'
-                %li.mail= link_to 'mail', 'mailto:devries@hetty82.nl'
+      %nav.mod-nav
+        %ul
+          %li= link_to 'Home', '/'
+          %li= link_to 'About', '/about.html'
+          %li= link_to 'Work', '/work.html'
+          %li
+            %ul.contact_icons
+              %li.linkedin= link_to 'linkedin', 'http://nl.linkedin.com/in/hettydevries'
+              %li.facebook= link_to 'facebook', 'https://www.facebook.com/hetty82'
+              %li.twitter= link_to 'twitter', 'https://twitter.com/hettydevries'
+              %li.mail= link_to 'mail', 'mailto:devries@hetty82.nl'
+
       = yield
 
-      %footer
+      %footer.mod-footer
         %p
-          copyright 2012 © Hetty de Vries
+          copyright 2013 &copy; Hetty de Vries
           %br
           front-end webdeveloper
           %br
           Amsterdam &#8226; The Netherlands
-        %div
-          %ul
-            %li
-              %ul.contact-icons
-                %li.linkedin= link_to 'linkedin', 'http://nl.linkedin.com/in/hettydevries'
-                %li.facebook= link_to 'facebook', 'https://www.facebook.com/hetty82'
-                %li.twitter= link_to 'twitter', 'https://twitter.com/hettydevries'
-                %li.mail= link_to 'mail', 'mailto:devries@hetty82.nl'
 
-            %li.backtotop= link_to 'back <br />to top', '#'
+        %ul
+          %li
+            %ul.contact_icons
+              %li.linkedin= link_to 'linkedin', 'http://nl.linkedin.com/in/hettydevries'
+              %li.facebook= link_to 'facebook', 'https://www.facebook.com/hetty82'
+              %li.twitter= link_to 'twitter', 'https://twitter.com/hettydevries'
+              %li.mail= link_to 'mail', 'mailto:devries@hetty82.nl'
+
+          %li.backtotop= link_to 'back <br />to top', '#'

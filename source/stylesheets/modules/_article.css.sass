@@ -1,12 +1,29 @@
 .mod-article
   margin-bottom: 20px
 
+  ul
+    margin: 12px 0
+    list-style: disc inside none
+
+  h3
+    font-size: 18px
+    margin-top: 12px
+    font-family: $font-basic
+
   blockquote
     margin-bottom: 30px
     padding: 0 40px
     font-style: italic
+    list-style: disc inside none
 
     footer
       margin-top: 10px
       font-size: 14px
       font-style: normal
+
+  a
+    color: $theme-color-primary
+    +transition(.3s)
+
+    &:hover
+      color: darken($theme-color-primary, 20%)

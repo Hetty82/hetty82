@@ -6,26 +6,22 @@
 
   li
     display: inline-block
-    width: 30px
-    height: 30px
+    position: relative
+    width: 40px
+    height: 40px
     margin: 0 3px
     padding: 0
-    vertical-align: middle
-    +border-radius(50%)
-
-    &.linkedin
-      background: inline-image("icons/linkedin-pink.png") no-repeat
-
-    &.facebook
-      background: inline-image("icons/facebook-pink.png") no-repeat
-
-    &.twitter
-      background: inline-image("icons/twitter-pink.png") no-repeat
-
-    &.mail
-      background: inline-image("icons/email-pink.png") no-repeat
 
   a
     display: block
     height: 100%
-    +hide-text
+
+    span
+      display: inline-block
+      +hide-text
+
+  +max-width(400px)
+    padding-left: 0
+
+    li
+      margin: 0 2px

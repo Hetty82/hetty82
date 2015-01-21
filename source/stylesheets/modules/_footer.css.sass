@@ -22,7 +22,7 @@
 
   li
     display: inline-block
-    height: 30px
+    height: 40px
     vertical-align: middle
     color: $font-color-medium
 
@@ -31,9 +31,9 @@
     font-size: 13px
     line-height: 16px
 
-  .backtotop
-    padding-left: 18px
-    background: inline-image("icons/arrow-grey.png") no-repeat
+  .contact_icons a:before
+    position: relative
+    top: 8px
 
   +max-width(960px)
     padding-bottom: 15px
@@ -54,6 +54,7 @@
       right: 20px
 
   +max-width(550px)
+    padding: 10px 0
     text-align: center
 
     p

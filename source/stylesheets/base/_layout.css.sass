@@ -9,10 +9,8 @@ html
 body
   min-width: 320px
   height: 100%
-  background: image-url("body_bg.png")
-
-  +retina
-    background: image-url("body_bg@2x.png")
+  background: rgba($yellow-bg,.3)
+  background: rgba($grey-bg,1)
 
 .layout-wrap
   @extend %clearfix
@@ -22,9 +20,9 @@ body
   position: relative
   margin: 0 auto
   padding: 40px 60px 200px
-  background: #ffffff image-url("bg-wrap.png") no-repeat bottom left
+  background: #fff image-url("bg-wrap.png") no-repeat bottom left
   background-size: 100%
-  +box-shadow(0 0 15px 5px rgba(#000,.1))
+  +box-shadow(0 0 10px 0 rgba($grey-bg, .5))
 
   +max-width(900px)
     padding-top: 60px
